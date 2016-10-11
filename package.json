@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-ignore",
-  "version": "1.0.2",
-  "description": "Ignore a certain by feeding it an empty object. Similar to browserify.ignore.",
+  "version": "1.0.3",
+  "description": "For ignoring a module in rollup.js.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,5 +10,13 @@
     "rollup-plugin"
   ],
   "author": "Alex Cai",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlur/rollup-plugin-ignore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexlur/rollup-plugin-ignore/issues"
+  },
+  "homepage": "https://github.com/alexlur/rollup-plugin-ignore#readme"
 }
