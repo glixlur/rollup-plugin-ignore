@@ -11,3 +11,5 @@ module.exports = function ignore(list) {
 		}
 	};
 }
+
+module.exports.default = module.exports;
