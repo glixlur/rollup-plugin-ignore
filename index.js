@@ -3,13 +3,14 @@ const emptyFileName = '\0empty_module';
 
 module.exports = function ignore(list) {
 	return {
-		resolveId: function (importee) {
+		resolveId(importee) {
 			return list.indexOf(importee) > -1 ? emptyFileName : null;
 		},
-		load: function (id) {
+		load(id) {
 			return id === emptyFileName ? emptyFile : null;
-		}
+		},
 	};
 }
 
-module.exports.default = module.exports;
+ignore.__esModule = true;
+ignore.default = ignore;
