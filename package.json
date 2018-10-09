@@ -1,22 +1,25 @@
 {
   "name": "rollup-plugin-ignore",
-  "version": "1.0.3",
-  "description": "For ignoring a module in rollup.js.",
+  "version": "1.0.4",
+  "description": "Ignore a module in rollup.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/test.js"
   },
   "keywords": [
     "rollup-plugin"
   ],
-  "author": "Alex Cai",
+  "author": "@glixlur",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexlur/rollup-plugin-ignore.git"
+    "url": "git+https://github.com/glixlur/rollup-plugin-ignore.git"
   },
   "bugs": {
-    "url": "https://github.com/alexlur/rollup-plugin-ignore/issues"
+    "url": "https://github.com/glixlur/rollup-plugin-ignore/issues"
   },
-  "homepage": "https://github.com/alexlur/rollup-plugin-ignore#readme"
+  "homepage": "https://github.com/glixlur/rollup-plugin-ignore#readme",
+  "devDependencies": {
+    "rollup": "^0.66.4"
+  }
 }

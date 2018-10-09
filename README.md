@@ -2,21 +2,37 @@
 Prevent a module from showing up in the output bundle. You will get `export default {}` instead.
 
 ## Installation
+```
 npm install --save-dev rollup-plugin-ignore
+yarn add rollup-plugin-ignore --dev
+```
 
 ## Usage
 Let’s say you want to prevent `fs` and `net` from being bundled:
 
 ```javascript
-import { rollup } from 'rollup';
 import ignore from 'rollup-plugin-ignore';
 
-rollup({
-  entry: 'main.js',
+export default {
+  input: 'main.js',
   plugins: [
-    ignore(['fs', 'net'])
-  ]
-}).then(...)
+    ignore(['fs', 'net']),
+  ],
+}
+```
+
+To ignore all built-in Node.js modules, use the following:
+
+```javascript
+import { builtinModules } from 'module';
+import ignore from 'rollup-plugin-ignore';
+
+export default {
+  input: 'main.js',
+  plugins: [
+    ignore(builtinModules),
+  ],
+}),
 ```
 
 ## License

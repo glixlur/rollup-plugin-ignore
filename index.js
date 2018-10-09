@@ -1,7 +1,7 @@
 const emptyFile = 'export default {}';
 const emptyFileName = '\0empty_module';
 
-module.exports = function ignore(list) {
+function ignore(list) {
 	return {
 		resolveId(importee) {
 			return list.indexOf(importee) > -1 ? emptyFileName : null;
@@ -12,5 +12,6 @@ module.exports = function ignore(list) {
 	};
 }
 
+module.exports = ignore;
 ignore.__esModule = true;
 ignore.default = ignore;
