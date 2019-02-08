@@ -1,8 +1,9 @@
 {
   "name": "rollup-plugin-ignore",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Ignore a module in rollup.js",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "node ./test/test.js"
   },
@@ -20,6 +21,6 @@
   },
   "homepage": "https://github.com/glixlur/rollup-plugin-ignore#readme",
   "devDependencies": {
-    "rollup": "^0.66.4"
+    "rollup": "^1.1.2"
   }
 }

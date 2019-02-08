@@ -9,10 +9,8 @@ async function main() {
     ],
   })
 
-  const { code } = await bundle.generate({
-    format: 'cjs',
-  });
-
+  const { output } = await bundle.generate({ format: 'cjs' });
+  const code = output[0].code
   const target = fs.readFileSync('./test/output.js', 'utf8');
   if (target !== code) {
     throw new Error('Test failed. Output: ' + code)
