@@ -1,16 +1,18 @@
-const emptyFile = 'export default {}';
-const emptyFileName = '\0empty_module';
+const emptyFile = "export default {}"
+const emptyFileName = "\0rollup_plugin_ignore_empty_module_placeholder"
 
-function ignore(list) {
+function ignore(list, options = {}) {
   return {
     resolveId(importee) {
-      return list.indexOf(importee) > -1 ? emptyFileName : null;
+      return list.includes(importee) ? emptyFileName : null
     },
     load(id) {
-      return id === emptyFileName ? emptyFile : null;
+      return (options.commonjsBugFix ? id.includes(emptyFile) : id === emptyFileName)
+        ? emptyFile
+        : null
     },
-  };
+  }
 }
 
-module.exports = ignore;
-ignore.default = ignore;
+module.exports = ignore
+ignore.default = ignore
