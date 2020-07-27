@@ -1,5 +1,5 @@
-"use strict"
+'use strict';
 
-var fs = {}
+var fs = {};
 
-fs.writeFileSync("foo.txt", "bar")
+fs.writeFileSync("foo.txt", "bar");

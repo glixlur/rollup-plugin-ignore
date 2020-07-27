@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-ignore",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Ignore a module in rollup.js",
   "main": "index.js",
   "types": "index.d.ts",
@@ -15,14 +15,14 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/glixlur/rollup-plugin-ignore.git"
+    "url": "git+https://github.com/proteriax/rollup-plugin-ignore.git"
   },
   "bugs": {
-    "url": "https://github.com/glixlur/rollup-plugin-ignore/issues"
+    "url": "https://github.com/proteriax/rollup-plugin-ignore/issues"
   },
-  "homepage": "https://github.com/glixlur/rollup-plugin-ignore#readme",
+  "homepage": "https://github.com/proteriax/rollup-plugin-ignore#readme",
   "devDependencies": {
-    "rollup": "^2.13.0"
+    "rollup": "^2.23.0"
   },
   "prettier": {
     "arrowParens": "avoid",

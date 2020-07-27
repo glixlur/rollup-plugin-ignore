@@ -7,7 +7,7 @@ function ignore(list, options = {}) {
       return list.includes(importee) ? emptyFileName : null
     },
     load(id) {
-      return (options.commonjsBugFix ? id.includes(emptyFile) : id === emptyFileName)
+      return (options.commonjsBugFix ? id.includes(emptyFileName) : id === emptyFileName)
         ? emptyFile
         : null
     },
